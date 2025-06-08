@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "PingMe",
+    "slug": "pingme",
+    "scheme": "pingme",
+    "icon": "./assets/icons.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.yourcompany.pingme",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "POST_NOTIFICATIONS"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "Use your Own"
+        }
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.pingme",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Needed to track your trip and alert you before destination.",
+        "NSLocationAlwaysUsageDescription": "Needed to track in background.",
+        "NSUserTrackingUsageDescription": "Used to show notifications about your trip."
+      }
+    },
+    "plugins": [
+      "expo-location"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2f00da9d-38ec-4efb-b75b-f2d580d7791c"
+      }
+    }
+  }
+}
